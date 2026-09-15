@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Cortex.Api.Data;
+﻿using Cortex.Api.Data;
 using Cortex.Api.Dtos;
 using Cortex.Api.Extensions;
 using Cortex.Api.Models;
+using Cortex.Api.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cortex.Api.Controllers;
 
@@ -15,8 +16,13 @@ public class NotesController : ControllerBase
 {
     private const int MaxPageSize = 50;
     private readonly CortexDbContext _db;
+    private readonly ITagService _tagService;
 
-    public NotesController(CortexDbContext db) => _db = db;
+    public NotesController(CortexDbContext db, ITagService tagService)
+    {
+        _db = db;
+        _tagService = tagService;
+    }
 
     [HttpGet]
     public async Task<ActionResult<PagedResponse<NoteResponse>>> GetNotes(
@@ -71,7 +77,7 @@ public class NotesController : ControllerBase
     {
         var userId = User.GetUserId();
 
-        if (!TryValidateTags(request.Tags, out var tagError))
+        if (!_tagService.ValidateTagNames(request.Tags, out var tagError))
         {
             ModelState.AddModelError(nameof(request.Tags), tagError!);
             return ValidationProblem(ModelState);
@@ -83,7 +89,7 @@ public class NotesController : ControllerBase
             UserId = userId,
             Title = request.Title.Trim(),
             Body = request.Body ?? string.Empty,
-            Tags = await ResolveTagsAsync(userId, request.Tags, cancellationToken)
+            Tags = await _tagService.ResolveTagsAsync(userId, request.Tags, cancellationToken)
         };
 
         _db.Notes.Add(note);
@@ -97,7 +103,7 @@ public class NotesController : ControllerBase
     {
         var userId = User.GetUserId();
 
-        if (!TryValidateTags(request.Tags, out var tagError))
+        if (!_tagService.ValidateTagNames(request.Tags, out var tagError))
         {
             ModelState.AddModelError(nameof(request.Tags), tagError!);
             return ValidationProblem(ModelState);
@@ -111,7 +117,7 @@ public class NotesController : ControllerBase
 
         note.Title = request.Title.Trim();
         note.Body = request.Body ?? string.Empty;
-        note.Tags = await ResolveTagsAsync(userId, request.Tags, cancellationToken);
+        note.Tags = await _tagService.ResolveTagsAsync(userId, request.Tags, cancellationToken);
         note.UpdatedAt = DateTimeOffset.UtcNow;
 
         await _db.SaveChangesAsync(cancellationToken);
@@ -130,38 +136,6 @@ public class NotesController : ControllerBase
         await _db.SaveChangesAsync(cancellationToken);
         return NoContent();
     }
-
-    private static bool TryValidateTags(List<string>? tags, out string? error)
-    {
-        error = null;
-        if (tags is null) return true;
-
-        if (tags.Any(t => string.IsNullOrWhiteSpace(t) || t.Length > 50))
-        {
-            error = "Each tag must be 1-50 characters.";
-            return false;
-        }
-        return true;
-    }
-
-    private async Task<List<Tag>> ResolveTagsAsync(Guid userId, List<string>? tagNames, CancellationToken cancellationToken)
-    {
-        if (tagNames is null || tagNames.Count == 0) return new List<Tag>();
-
-        var normalized = tagNames.Select(t => t.Trim().ToLowerInvariant()).Distinct().ToList();
-
-        var existing = await _db.Tags
-            .Where(t => t.UserId == userId && normalized.Contains(t.Name))
-            .ToListAsync(cancellationToken);
-
-        var missingNames = normalized.Except(existing.Select(t => t.Name));
-        var created = missingNames.Select(name => new Tag { Id = Guid.NewGuid(), UserId = userId, Name = name }).ToList();
-
-        if (created.Count > 0) _db.Tags.AddRange(created);
-
-        return existing.Concat(created).ToList();
-    }
-
     private static NoteResponse ToResponse(Note note) => new(
         note.Id,
         note.Title,

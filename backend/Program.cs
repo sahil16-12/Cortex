@@ -1,4 +1,5 @@
 using Cortex.Api.Data;
+using Cortex.Api.Services;
 using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -64,6 +65,8 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<CortexDbContext>(options =>
     options.UseNpgsql(connectionString)
            .UseSnakeCaseNamingConvention());
+
+builder.Services.AddScoped<ITagService, TagService>();
 
 var app = builder.Build();
 
