@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Cortex.Api.Data;
+﻿using Cortex.Api.Data;
 using Cortex.Api.Dtos;
 using Cortex.Api.Extensions;
+using Cortex.Api.Mapping;
 using Cortex.Api.Models;
 using Cortex.Api.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Net.NetworkInformation;
 
 namespace Cortex.Api.Controllers;
 
@@ -54,7 +56,7 @@ public class TasksController : ControllerBase
             .AsSplitQuery()
             .ToListAsync(cancellationToken);
 
-        return Ok(new PagedResponse<TaskResponse>(tasks.Select(ToResponse).ToList(), page, pageSize, totalCount));
+        return Ok(new PagedResponse<TaskResponse>(tasks.Select(TaskMapper.ToResponse).ToList(), page, pageSize, totalCount));
     }
 
     [HttpGet("{id:guid}")]
@@ -63,7 +65,7 @@ public class TasksController : ControllerBase
         var userId = User.GetUserId();
         var task = await _db.Tasks.AsNoTracking().Include(t => t.Tags)
             .FirstOrDefaultAsync(t => t.Id == id && t.UserId == userId, cancellationToken);
-        return task is null ? NotFound() : Ok(ToResponse(task));
+        return task is null ? NotFound() : Ok(TaskMapper.ToResponse(task));
     }
 
     [HttpPost]
@@ -76,7 +78,7 @@ public class TasksController : ControllerBase
             ModelState.AddModelError(nameof(request.Tags), tagError!);
             return ValidationProblem(ModelState);
         }
-
+        var status = request.Status ?? "pending";
         var task = new TaskItem
         {
             Id = Guid.NewGuid(),
@@ -85,12 +87,13 @@ public class TasksController : ControllerBase
             Status = request.Status ?? "pending",
             Priority = request.Priority ?? "normal",
             DueDate = request.DueDate,
+            CompletedAt = status == "done" ? DateTimeOffset.UtcNow : null,
             Tags = await _tagService.ResolveTagsAsync(userId, request.Tags, cancellationToken)
         };
 
         _db.Tasks.Add(task);
         await _db.SaveChangesAsync(cancellationToken);
-        return CreatedAtAction(nameof(GetTask), new { id = task.Id }, ToResponse(task));
+        return CreatedAtAction(nameof(GetTask), new { id = task.Id }, TaskMapper.ToResponse(task));
     }
 
     [HttpPut("{id:guid}")]
@@ -107,6 +110,11 @@ public class TasksController : ControllerBase
         var task = await _db.Tasks.Include(t => t.Tags)
             .FirstOrDefaultAsync(t => t.Id == id && t.UserId == userId, cancellationToken);
         if (task is null) return NotFound();
+
+        if (request.Status == "done" && task.Status != "done")
+            task.CompletedAt = DateTimeOffset.UtcNow;
+        else if (request.Status != "done")
+            task.CompletedAt = null;
 
         task.Title = request.Title.Trim();
         task.Status = request.Status;
@@ -130,10 +138,4 @@ public class TasksController : ControllerBase
         await _db.SaveChangesAsync(cancellationToken);
         return NoContent();
     }
-
-    private static TaskResponse ToResponse(TaskItem task) => new(
-        task.Id, task.Title, task.Status, task.Priority, task.DueDate,
-        task.Tags.Select(t => t.Name).OrderBy(n => n).ToList(),
-        task.CreatedAt, task.UpdatedAt
-    );
 }

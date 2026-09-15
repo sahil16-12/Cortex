@@ -4,7 +4,7 @@ namespace Cortex.Api.Dtos;
 
 public record TaskResponse(
     Guid Id, string Title, string Status, string Priority,
-    DateTimeOffset? DueDate, List<string> Tags,
+    DateTimeOffset? DueDate, DateTimeOffset? CompletedAt, List<string> Tags,
     DateTimeOffset CreatedAt, DateTimeOffset UpdatedAt
 );
 

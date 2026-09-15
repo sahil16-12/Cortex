@@ -85,4 +85,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Added a health endpoint for CI/CD and monitoring
+app.MapGet("/api/health", () => Results.Ok(new { status = "healthy", timestamp = DateTimeOffset.UtcNow }))
+   .AllowAnonymous();
+
 app.Run();

@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\dtos\\summarydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:dtos\\summarydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\dtos\\taskdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:dtos\\taskdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\dtos\\tagdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:dtos\\tagdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\summarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:controllers\\summarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\mapping\\taskmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:mapping\\taskmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,22 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\data\\cortexdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:data\\cortexdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\dtos\\taskdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:dtos\\taskdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\services\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|c:\\users\\sahil\\onedrive\\desktop\\cortex\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A788818-6E57-FE4B-3712-163DA6937E5F}|Cortex.Api.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -98,20 +110,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TagsController.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TagsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TagsController.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TagsController.cs",
-              "RelativeToolTip": "Controllers\\TagsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "SummaryController.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\SummaryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SummaryController.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\SummaryController.cs",
+              "RelativeToolTip": "Controllers\\SummaryController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T12:59:03.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-15T13:46:07.639Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SummaryDtos.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\SummaryDtos.cs",
+              "RelativeDocumentMoniker": "Dtos\\SummaryDtos.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\SummaryDtos.cs",
+              "RelativeToolTip": "Dtos\\SummaryDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T13:45:36.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskMapper.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Mapping\\TaskMapper.cs",
+              "RelativeDocumentMoniker": "Mapping\\TaskMapper.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Mapping\\TaskMapper.cs",
+              "RelativeToolTip": "Mapping\\TaskMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T13:40:48.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TagDtos.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\TagDtos.cs",
               "RelativeDocumentMoniker": "Dtos\\TagDtos.cs",
@@ -124,32 +160,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "TaskDtos.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\TaskDtos.cs",
               "RelativeDocumentMoniker": "Dtos\\TaskDtos.cs",
               "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\TaskDtos.cs",
               "RelativeToolTip": "Dtos\\TaskDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T11:16:14.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TagService.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Services\\TagService.cs",
-              "RelativeDocumentMoniker": "Services\\TagService.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Services\\TagService.cs",
-              "RelativeToolTip": "Services\\TagService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotesController.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "Controllers\\NotesController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwIoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T11:13:06.683Z"
+              "WhenOpened": "2026-09-15T04:55:03.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAlwFUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T06:27:51.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ITagService.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Services\\ITagService.cs",
               "RelativeDocumentMoniker": "Services\\ITagService.cs",
@@ -161,19 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NotesController.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\NotesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NotesController.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\NotesController.cs",
-              "RelativeToolTip": "Controllers\\NotesController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAvwH0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T04:55:03.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "PagedResponse.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\PagedResponse.cs",
               "RelativeDocumentMoniker": "Dtos\\PagedResponse.cs",
@@ -185,7 +222,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Models\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\TaskItem.cs",
+              "RelativeToolTip": "Models\\TaskItem.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T06:23:10.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAhwFAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T11:18:30.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TagService.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Services\\TagService.cs",
+              "RelativeDocumentMoniker": "Services\\TagService.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Services\\TagService.cs",
+              "RelativeToolTip": "Services\\TagService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T11:13:06.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TagsController.cs",
+              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TagsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TagsController.cs",
+              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TagsController.cs",
+              "RelativeToolTip": "Controllers\\TagsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T12:59:03.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -197,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "CortexDbContext.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Data\\CortexDbContext.cs",
               "RelativeDocumentMoniker": "Data\\CortexDbContext.cs",
@@ -205,24 +290,11 @@
               "RelativeToolTip": "Data\\CortexDbContext.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA+wBkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T06:25:37.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T06:25:37.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TasksController.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TasksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\TasksController.cs",
-              "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAswHYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T11:18:30.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "ClaimsPrincipalExtension.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Extensions\\ClaimsPrincipalExtension.cs",
               "RelativeDocumentMoniker": "Extensions\\ClaimsPrincipalExtension.cs",
@@ -234,19 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAlwEIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T06:27:51.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "NoteDtos.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\NoteDtos.cs",
               "RelativeDocumentMoniker": "Dtos\\NoteDtos.cs",
@@ -258,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -270,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "AuthDtos.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Dtos\\AuthDtos.cs",
               "RelativeDocumentMoniker": "Dtos\\AuthDtos.cs",
@@ -282,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -294,19 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TaskItem.cs",
-              "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\TaskItem.cs",
-              "RelativeDocumentMoniker": "Models\\TaskItem.cs",
-              "ToolTip": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\TaskItem.cs",
-              "RelativeToolTip": "Models\\TaskItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T06:23:10.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\Tag.cs",
               "RelativeDocumentMoniker": "Models\\Tag.cs",
@@ -318,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Note.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\Note.cs",
               "RelativeDocumentMoniker": "Models\\Note.cs",
@@ -330,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\sahil\\OneDrive\\Desktop\\Cortex\\backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
