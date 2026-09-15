@@ -27,5 +27,9 @@ public class CortexDbContext : DbContext
             .HasMany(t => t.Tags)
             .WithMany(tag => tag.Tasks)
             .UsingEntity(j => j.ToTable("task_tags"));
+
+        modelBuilder.Entity<Tag>()
+            .HasIndex(t => new { t.UserId, t.Name })
+            .IsUnique();
     }
 }
